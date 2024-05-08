@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinion</title>
+    <link rel="stylesheet" href="opinion.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+
+    <div class="home">
+        <div class="judul">PANCASILA</div>
+        <ul  class="navigation">
+            <li class="navlink"><a href="index.html">HOME</a></li>
+            <li class="navlink">
+                <div class="dropdown">
+                    <button class="dropbtn">TEAM</button>
+                    <div class="dropdown-content">
+                        <a href="team.html">Founders</a>
+                        <a href="sound.html">Sound of Founders</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navlink">
+                <div class="dropdown">
+                    <button class="dropbtn">CONTENT</button>
+                    <div class="dropdown-content">
+                        <a href="opinion.html">Opinion</a>
+                        <a href="content.html">Final Result</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <section id="team">
+        <div class="container1">
+            <div class="Team">
+                <ul class="gallery">
+                    <li>
+                        <img src="karno.png" alt="">
+                    </li>
+                    <li>
+                        <img src="yam.png" alt="">
+                    </li>
+                    <li>
+                        <img src="pomo.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Script untuk inisialisasi Slick Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('.Team ul.gallery').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+        });
+    </script>
+</body>
+</html>
